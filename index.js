@@ -73,7 +73,7 @@ app.use('/', authRoutes)
 app.get('/', ToughtsController.showAll)
 
 conn
-    //.sync({force: true})
+    // .sync({force: true})
     .sync()
     .then(() => {
         app.listen(3000)
